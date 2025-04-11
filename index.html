@@ -186,12 +186,13 @@
                 const gifImagem = estudante.querySelector('.gif-imagem');
                 
             });
+
             /* Quando o mouse entra na imagem do estudante */
 
-            imagem.addEventListener('mouseEnter', ()=>{
-                const gifSrc = imagem.getAttribute(`data-gif`);
-                gifImagem.src = `./Assets/Gifs/$(gifSRC)`;
-                gifCard.styel.display = 'flex';
+            imagem.addEventListener('mouseenter', ()=>{
+                const gifSrc = imagem.getAttribute('data-gif');
+                gifImagem.src = `./Assets/Gifs/$(gifSrc)`;
+                gifCard.style.display = 'flex';
             })
         });
     </script>
