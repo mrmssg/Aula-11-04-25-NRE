@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hogwarts</title>
+    <link rel="stylesheet" href="./Assets/style.css">
     
 </head>
 
@@ -210,10 +211,10 @@
         }
 
         /* Configurar um timeout para esconder overlay após 3 segundos  */
-        setTimeout()=>{
+        setTimeout(()=>{
             overlay.style.display = 'none';
             history.replaceState(null,null,window.location.pathneme);
-        }
+        }, 3000);
     </script>
 
 </html> 
