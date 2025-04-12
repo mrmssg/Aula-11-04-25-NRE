@@ -178,7 +178,7 @@
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {
-            const estudantes = document.querySelectorAll('.estudante-container');
+                const estudantes = document.querySelectorAll('.estudante-container');
 
             /* Para cada estudante configura os eventos do mouse */
 
@@ -186,8 +186,6 @@
                 const imagem = estudante.querySelector('.imagem-estudante');
                 const gifCard = estudante.querySelector('.gif-card');
                 const gifImagem = estudante.querySelector('.gif-imagem');
-
-            });
 
             /* Quando o mouse entra na imagem do estudante */
 
@@ -200,7 +198,8 @@
             imagem.addEventListener('mouseleave', () => {
                 gifCard.style.display = 'none';
             });
-
+        });
+        /* Verifica se veio redirecionamento do Forms */
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('formForms')) {
                 showLetterAnimation(); /* Mostra animação da carta de Hogwarts */
