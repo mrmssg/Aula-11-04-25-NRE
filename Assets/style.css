@@ -90,7 +90,7 @@ body {
     left: 0; /* Posicionar à esquerda */ 
     width: 100%; /* Largura total */ 
     height: 100%; /* Altura total */ 
-    background: url('./Assets/Imagens/hogwarts-crest-white.png'), center/contain no-repeat; /* Marca d'água do brasão */ 
+    background: url('./Assets/Imagens/hogwarts-crest-white.png'), center / contain no-repeat; /* Marca d'água do brasão */ 
     opacity: 0.1; /* Baixa opacidade */ 
     pointer-events: none; /* Ignorar eventos de ponteiro */ 
     border-radius: 15px; /* Bordas arredondadas */ 
