@@ -68,7 +68,7 @@ body {
 /* Seção da escola */ 
 .escola { background-image: url('./Gifs/casa_hogwarts.gif'); /* Imagem de fundo */ 
     background-size: cover; /* Cobrir todo o elemento */ 
-    background-position: center; /* Centralizar o fundo */ 
+    background-position: center center; /* Centralizar o fundo */ 
     background-repeat: no-repeat; /* Não repetir */ 
     display: flex; /* Container flexível */ 
     justify-content: center; /* Centralizar horizontalmente */ 
@@ -84,12 +84,13 @@ body {
 
 /* Sobreposição da seção da escola */ 
 .escola::before { 
-    content: ""; /* Conteúdo vazio / position: absolute; / Posicionamento absoluto */ 
+    content: ""; /* Conteúdo vazio */ 
+    position: absolute; /* Posicionamento absoluto */ 
     top: 0; /* Posicionar no topo */ 
     left: 0; /* Posicionar à esquerda */ 
     width: 100%; /* Largura total */ 
     height: 100%; /* Altura total */ 
-    background: url('./Assets/Imagens/hogwarts-crest-white.png') center/contain no-repeat; /* Marca d'água do brasão */ 
+    background: url('./Assets/Imagens/hogwarts-crest-white.png'), center/contain no-repeat; /* Marca d'água do brasão */ 
     opacity: 0.1; /* Baixa opacidade */ 
     pointer-events: none; /* Ignorar eventos de ponteiro */ 
     border-radius: 15px; /* Bordas arredondadas */ 
