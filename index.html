@@ -126,7 +126,7 @@
             <!-- Container do Cedrico Diggory -->
             <div class="estudante-container">
                 <img class="imagem-estudante" src="./Assets/Imagens/cedric_diggory_novo_6.png"
-                    data-gif="gif_cedric.giff" alt="Cedrico Diggory">
+                    data-gif="gif_cedric.gif" alt="Cedrico Diggory">
                 <h3 class="estudante-nome">Cedrico Diggory</h3>
                 <img class="estudante-casa" src="/Assets/Imagens/logo-lufa-lufa.png" alt="Logo da Lufa-Lufa">
                 <div class="gif-card">
@@ -185,14 +185,15 @@
             estudantes.forEach(estudante => {
                 const imagem = estudante.querySelector('.imagem-estudante');
                 const gifCard = estudante.querySelector('.gif-card');
-                const gifImagem = estudante.querySelector('.gif-imagem');
+                const gifImagem = gifCard.querySelector('.gif-imagem');
 
             /* Quando o mouse entra na imagem do estudante */
 
-            imagem.addEventListener('mouseenter', () => {
-                const gifSrc = imagem.getAttribute('data-gif');
-                gifImagem.src = `./Assets/Gifs/$(gifSrc)`;
-                gifCard.style.display = 'flex';
+             imagem.addEventListener('mouseenter', () => {
+                    const gifSrc = imagem.getAttribute('data-gif');
+                    gifImagem.src = `./Assets/Gifs/${gifSrc}`;
+                    gifCard.style.display = 'flex';
+
             });
             /* Quando o moouse sai da imagem do estudante */
             imagem.addEventListener('mouseleave', () => {
